@@ -19,7 +19,7 @@ async function getBestProfession(req) {
       type: sequelize.QueryTypes.SELECT
     }
   )
-  return profession;
+  return profession[0];
 }
 
 async function getBestClients(req) {
